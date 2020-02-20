@@ -35,8 +35,6 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-        # binding.pry
-
     @op = :"#{params[:operation]}"
     @temp = {}
     @temp[:operation] = @op
